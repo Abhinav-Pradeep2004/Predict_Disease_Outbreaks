@@ -8,9 +8,9 @@ st.set_page_config("PREDICT DISEASE OUTBREAKS",
                    page_icon="doctor")
 
 try:
-    diabeties_model = pkl.load(open("P:\\Predict_Disease_Outbreaks\\model_sets\\diabeties_model.pkl", "rb"))
-    heart_disease_model = pkl.load(open("P:\\Predict_Disease_Outbreaks\\model_sets\\heart_disease_model.pkl", "rb"))
-    parkinsons_model = pkl.load(open("P:\\Predict_Disease_Outbreaks\\model_sets\\parkinsons_model.pkl", "rb"))
+    diabeties_model = pkl.load(open("model_sets/diabeties_model.pkl", "rb"))
+    heart_disease_model = pkl.load(open("model_sets/heart_disease_model.pkl", "rb"))
+    parkinsons_model = pkl.load(open("model_sets/parkinsons_model.pkl", "rb"))
 except Exception as e:
     st.error("Error loading models. Please check the file paths and ensure the models exist.")
     st.stop()
